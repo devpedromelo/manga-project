@@ -18,17 +18,17 @@ body{
 }
 
 .container{
-    background-image: linear-gradient(to right, #570404ac 30%, #333333c2), url(../img/one-piece.jpg);
+    background-image: linear-gradient(to right, #1c227bac 30%, #333333c2), url(../img/one-piece.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 90%;
     height: 650px;
-    margin: 50px;
+    margin: 60px auto;
 }
 
 .container:hover{
-    background-image: linear-gradient(to right, #570404ac 30%, #33333373), url(../img/one-piece.jpg);
+    background-image: linear-gradient(to right, #1c227bac 30%, #474747c2), url(../img/one-piece.jpg);
 }
 
 header{
@@ -190,7 +190,7 @@ section .imgs{
     overflow: hidden;
     transition-duration: .3s;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-    background-color: rgb(255, 65, 65);
+    background-color: rgb(20, 165, 255);
   }
   
   /* plus sign */
@@ -252,7 +252,7 @@ section .imgs{
 
     width: 10px;
     height: 63%;
-    background-image: linear-gradient(rgb(255, 65, 65), rgb(255, 76, 76));
+    background-image: linear-gradient(rgb(111 199 255), rgb(16 128 255));
 }
 
 .col-2{
@@ -270,7 +270,7 @@ section .imgs{
     position: absolute;
     right: 0;
     top: 0;
-    background-image: linear-gradient(rgb(255, 65, 65), rgb(255, 76, 76));
+    background-image: linear-gradient(rgb(111 199 255), rgb(16 128 255));
     border-radius: 20px 00 20px;
     height: 100%;
     width: 80%;
@@ -286,11 +286,15 @@ section .imgs{
 }
 
 .battle h2{
+    color: #ffff;
+    margin-bottom: -14px;
     text-align: center;
 }
 
 .battle p{
+    color: #ffff;
     margin: auto;
+    margin-top: 35px;
     padding: 10px;
     text-align: center;
     font-size: 1.2em;
@@ -307,16 +311,62 @@ img.vs{
     height: 195px;
 }
 
+.personagem1{
+    margin-left: -140px;
+}
+
+.personagem2{
+    margin: -63px;
+}
+
+.personagem1::before, .personagem2::before{
+    position: absolute;
+    top: 25%;
+    color: #ffff;
+    font-size: 3em;
+    height: 9px;
+    width: 10%;
+    text-transform: uppercase;
+    background-image: linear-gradient(rgb(220 241 255), rgb(140 194 255));
+    z-index: -1;
+}
+
+.personagem1::before{
+    content: 'Sanji';
+    left: 6%;
+    transform: rotate(270deg);
+}
+
+.personagem2::before{
+    content: 'Zoro';
+    left: 84%;
+    transform: rotate(91deg);
+}
+
 .fight{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 55px auto 15px;
+    margin: 20px auto 15px;
     background: linear-gradient(rgba(0, 0, 0, 0.305), rgba(0, 0, 0, 0.547)), url(../img/bg-img.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    width: 80%;
+    height: 65%;
+    max-width: 70%;
+    box-shadow: 5px 5px 10px #00000073 inset;
+    border-radius: 20px;
+}
+
+.collor-fight{
+    position: absolute;
+    top: 3%;
+    left: 8%;
+    background-image: linear-gradient(rgb(0 40 163), rgb(85 154 205));
+    border-radius: 20px;
+    height: 75%;
+    width: 85%;
+    z-index: -1;
 }
 
 .btns{
@@ -349,10 +399,10 @@ button {
    
 .change-battle, .start-battle {
     font-weight: 600;
-    color: #382b22;
+    color: #223838;
     text-transform: uppercase;
-    background: #fff9f0;
-    border: 2px solid #b19685;
+    background: #f0ffff;
+    border: 2px solid #85aeb1;
     border-radius: 0.75em;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -369,37 +419,37 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #f9d7c4;
+    background: #c4f6f9;
     border-radius: inherit;
-    -webkit-box-shadow: 0 0 0 2px #b19c85, 0 0.625em 0 0 #ffefe2;
-    box-shadow: 0 0 0 2px #b19b85, 0 0.625em 0 0 #ffefe2;
+    /* -webkit-box-shadow: 0 0 0 2px #85acb1, 0 0.625em 0 0 #e2fcff;
+    box-shadow: 0 0 0 2px #85b1af, 0 0.625em 0 0 #e2fcff; */
     -webkit-transform: translate3d(0, 0.75em, -1em);
     transform: translate3d(0, 0.75em, -1em);
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 
 .change-battle:hover, .start-battle:hover {
-    background: #fff1e9;
+    background: #e9feff;
     -webkit-transform: translate(0, 0.25em);
     transform: translate(0, 0.25em);
 }
 
 .change-battle:hover::before, .start-battle:hover::before{
-    -webkit-box-shadow: 0 0 0 2px #b19885, 0 0.5em 0 0 rgb(255, 241, 226);
-    box-shadow: 0 0 0 2px #b19785, 0 0.5em 0 0 rgb(255, 237, 226);
+    /* -webkit-box-shadow: 0 0 0 2px #85aeb1, 0 0.5em 0 0 rgb(226, 255, 253);
+    box-shadow: 0 0 0 2px #85b1ae, 0 0.5em 0 0 rgb(226, 255, 251); */
     -webkit-transform: translate3d(0, 0.5em, -1em);
     transform: translate3d(0, 0.5em, -1em);
 }
 
 .change-battle:active, .start-battle:active {
-    background: #fff1e9;
+    background: rgb(233, 253, 255);
     -webkit-transform: translate(0em, 0.75em);
     transform: translate(0em, 0.75em);
 }
 
 .change-battle:active::before, .start-battle:active::before {
-    -webkit-box-shadow: 0 0 0 2px #b19685, 0 0 #ffede2;
-    box-shadow: 0 0 0 2px #b18597, 0 0 #ffefe2;
+    -webkit-box-shadow: 0 0 0 2px #85aab1, 0 0 #e2ffff;
+    box-shadow: 0 0 0 2px #85aab1, 0 0 #e2fbff;
     -webkit-transform: translate3d(0, 0, -1em);
     transform: translate3d(0, 0, -1em);
 }
