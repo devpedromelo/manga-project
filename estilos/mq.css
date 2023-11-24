@@ -1,0 +1,205 @@
+@media screen and (max-width: 1330px){
+    .h2-div {
+        font-size: 2em;
+    }
+
+    .imgs img {
+        height: 90%;
+        margin: 0px 50px 0px 100px;
+    }
+
+    .content-img {
+        max-width: 550px;
+        margin: 0px auto;
+        margin-right: 9%;
+        margin-left: 0;
+        border-radius: 0px 40px 40px 0px;
+    }
+}
+
+@media screen and (max-width: 1110.40px){
+    .h2-div {
+        top: 17%;
+    }
+
+    .imgs img {
+        height: 80%;
+    }
+
+    .content-img {
+        padding: 45px;
+    }
+
+    .battle img {
+        height: 350px;
+        width: 390px;
+        margin-top: 17%;
+    }
+
+    img.vs {
+        width: 230px;
+        height: 195px;
+    }
+
+    .personagem1 {
+        margin-right: -5%;
+    }
+}
+
+@media screen and (max-width: 998px){
+    .h2-div {
+        left: 54%;
+    }
+
+    .imgs img{
+        margin: 0px 0 0px 25px;
+    }
+
+    .content-img {
+        margin-right: 1%;
+    }
+
+    .col-1 h2 {
+        font-size: 50px;
+    }
+
+    .col-1 h3 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .personagem1 {
+        margin-right: -10%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .collor-fight {
+        top: 3%;
+        left: 1%;
+        width: 98%;
+    }
+
+    .personagem1::before {
+        left: -4%;
+    }
+
+    .personagem2::before {
+        left: 88%;
+        top: 23%;
+    }
+
+    .personagem1::before, .personagem2::before {
+        font-size: 3.8em;
+        width: 16%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        margin-bottom: 35%;
+    }
+
+    .h2-div {
+        margin: auto;
+        top: -30%;
+        left: 20%;
+    }
+
+    .characters{
+        margin-bottom: 30%;
+        margin-top: 20%;
+    }
+
+    section .imgs {
+        display: flex;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* width: 100%; */
+        height: 100%;
+        /* justify-content: space-between; */
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .content-img {
+        padding: 40px;
+        width: 70%;
+    }
+
+    .vol {
+        flex-direction: column;
+    }
+
+    .col-1{
+        margin-left: -10%;
+    }
+
+    .col-1 h2 {
+        font-size: 60px;
+    }
+
+    .col-1 h3 {
+        font-size: 23px;
+    }
+
+    .col-1 h4 {
+        margin: 15px 0;
+        font-size: 17px;
+    }
+
+    .col-1 .Btn{
+        margin-bottom: 10%;
+    }
+
+    .fight {
+        margin: 35px auto 15px;
+        height: 65%;
+        max-width: 100%;
+    }
+
+    .collor-fight {
+        top: 3%;
+        left: 0%;
+        width: 100%;
+    }
+
+    .personagem1 {
+        margin-right: -27%;
+    }
+
+    .personagem2 {
+        margin-right: -13%;
+    }
+
+    .battle img {
+        height: 348px;
+        width: 300px;
+        margin-top: 17%;
+    }
+
+    img.vs {
+        width: 175px;
+        height: 150px;
+        margin-left: 15%;
+        margin-right: -4%;
+    }
+
+    .personagem1::before, .personagem2::before {
+        top: 5%;
+        height: 9px;
+        font-size: 2.8em;
+    }
+
+    .personagem1::before {
+        left: 6%;
+        transform: rotate(360deg);
+    }
+
+    .personagem2::before {
+        left: 79%;
+        transform: rotate(0deg);
+    }
+    
+}
