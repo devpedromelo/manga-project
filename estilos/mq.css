@@ -99,6 +99,7 @@
 @media screen and (max-width: 800px){
     .container{
         margin-bottom: 35%;
+        background-position: right;
     }
 
     .h2-div {
@@ -203,3 +204,86 @@
     }
     
 }
+
+@media screen and (max-width: 645.60px){
+    .vol {
+        margin: 15em 0 7em 0;
+    }
+
+    .col-1 {
+        margin: 0px auto 3em 17%;
+    }
+
+    .col-1 h2 {
+        font-size: 3em;
+    }
+
+    .col-1 h3 {
+        font-size: 1.3em;
+    }
+
+    .col-2 img {
+        width: 90%;
+    }
+
+    .collor {
+        right: 7%;
+        width: 75%;
+    }
+
+    .battle {
+        height: 100%;
+    }
+
+    .battle h2{
+        font-size: 1.6em;
+    }
+
+    .personagem1::before, .personagem2::before {
+        height: 7px;
+        width: 78px;
+        font-size: 1.8em;
+    }
+
+    .fight {
+        height: 45%;
+    }
+
+    .collor-fight{
+        height: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .personagem1 img, .personagem2 img {
+        height: 240px;
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 548px){
+    .fight {
+        margin: 3em auto 15px;
+        height: 65%;
+        max-width: 100%;
+    }
+
+    .personagem1::before, .personagem2::before {
+        top: 10%;
+    }
+
+    .personagem1 {
+        margin-right: -35%;
+    }
+
+    .personagem2 {
+        margin-right: -19%;
+    }
+
+    img.vs{
+        width: 120px;
+        height: 90px;
+        margin-left: 20%;
+        margin-right: 0%;
+    }
+}
+
