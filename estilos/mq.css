@@ -102,6 +102,10 @@
         background-position: right;
     }
 
+    .container p{
+        font-size: 15px;
+    }
+
     .h2-div {
         margin: auto;
         top: -30%;
@@ -206,6 +210,28 @@
 }
 
 @media screen and (max-width: 645.60px){
+    header{
+        flex-direction: column;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content, .content-img {
+        margin-top: 40px;
+    }
+    
+    .content button {
+        font-size: 25px;
+    }
+    
+    .container h2{
+        font-size: 2em;
+    }
+
     .vol {
         margin: 15em 0 7em 0;
     }
@@ -223,7 +249,7 @@
     }
 
     .col-2 img {
-        width: 90%;
+        width: 95%;
     }
 
     .collor {
@@ -260,7 +286,52 @@
     }
 }
 
+@media screen and (max-width: 567px){
+    .characters {
+        margin-bottom: 40%;
+        margin-top: 45%;
+     }
+
+     .h2-div {
+        font-size: 1.5em;
+    }
+
+    .vol {
+        margin: 18em 0 7em 0;
+    }
+
+    .collor {
+        right: 0%;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 548px){
+    .container {
+        width: 100%;
+        margin: 0px auto;
+        margin-bottom: 50%;
+        background-position: left;
+    }
+
+    ul {
+        width: 90%;
+    }
+
+    .content, .content-img {
+        max-height: 50%;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .content p {
+        width: 280px;
+    }    
+
+    .col-1 h3 {
+        font-size: 1.2em;
+    }
+    
     .fight {
         margin: 3em auto 15px;
         height: 65%;
@@ -287,3 +358,58 @@
     }
 }
 
+@media screen and (max-width: 480px){
+    .fight {
+        margin: 3em auto 15px -20px;
+        height: 65%;
+        min-width: 110%;
+    }
+
+    .personagem1 {
+        margin-right: -50%;
+    }
+
+    img.vs {
+        width: 120px;
+        height: 90px;
+        margin-left: 36%;
+        margin-right: -2%;
+    }
+
+    .personagem2 {
+        margin-right: -23%;
+    }
+
+    .personagem1 img, .personagem2 img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .personagem1::before, .personagem2::before {
+        height: 7px;
+        width: 50px;
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 410.40px){
+    .personagem1 img, .personagem2 img {
+        height: 152px;
+        width: 172px;
+    }
+
+    .personagem1 {
+        margin-right: -70%;
+    }    
+
+    img.vs {
+        width: 70px;
+        height: 60px;
+        margin-left: 53%;
+        margin-right: 2%;
+    }
+
+    .personagem2 {
+        margin-right: -38%;
+    }
+}

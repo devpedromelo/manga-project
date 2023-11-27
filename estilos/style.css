@@ -75,6 +75,7 @@ ul a:hover{
     initial-letter: 2px;
     width: 420px;
     padding: 20px 0px;
+    text-align: justify;
 }
 
 .content button{
